@@ -1,0 +1,158 @@
+<!-- عنوان الورشة -->
+<div class="header">
+
+    <h1>ورشة المنح الدراسية</h1>
+
+    <p>
+        يرجى ملء المعلومات التالية لإتمام التسجيل
+        في ورشة المنح الدراسية.
+    </p>
+
+    <small>
+        <span class="required">*</span>
+        السؤال مطلوب
+    </small>
+
+</div>
+
+
+<!-- الاستمارة -->
+<form
+    id="registrationForm"
+    action="https://formsubmit.co/nwrrswljasm@gmail.com"
+    method="POST">
+
+    <!-- إعدادات البريد -->
+    <input
+        type="hidden"
+        name="_subject"
+        value="تسجيل لورشة المنح">
+
+    <input
+        type="hidden"
+        name="_template"
+        value="table">
+
+
+    <!-- الاسم -->
+    <div class="question">
+
+        <label>
+            الاسم الثلاثي بالعربي
+            <span class="required">*</span>
+        </label>
+
+        <input
+            type="text"
+            name="full_name"
+            placeholder="اكتب اسمك الثلاثي بالعربي"
+            maxlength="100"
+            required>
+
+    </div>
+
+
+    <!-- العمر -->
+    <div class="question">
+
+        <label>
+            العمر
+            <span class="required">*</span>
+        </label>
+
+        <input
+            type="number"
+            name="age"
+            placeholder="اكتب عمرك"
+            min="1"
+            max="120"
+            required>
+
+    </div>
+
+
+    <!-- التليجرام -->
+    <div class="question">
+
+        <label>
+            معرف التليجرام
+            <span class="required">*</span>
+        </label>
+
+        <input
+            type="text"
+            name="telegram"
+            placeholder="@username"
+            maxlength="100"
+            required>
+
+    </div>
+
+
+    <!-- تأكيد الحضور -->
+    <div class="question">
+
+        <label>
+            هل أنت متأكد من حضورك؟
+            <span class="required">*</span>
+        </label>
+
+        <div class="options">
+
+            <label>
+                <input
+                    type="radio"
+                    name="attendance"
+                    value="نعم"
+                    required>
+                نعم
+            </label>
+
+            <label>
+                <input
+                    type="radio"
+                    name="attendance"
+                    value="لا">
+                لا
+            </label>
+
+            <label>
+                <input
+                    type="radio"
+                    name="attendance"
+                    value="ربما">
+                ربما
+            </label>
+
+        </div>
+
+    </div>
+
+
+    <!-- زر التسجيل -->
+    <button
+        type="submit"
+        id="submitButton">
+
+        تسجيل في الورشة
+
+    </button>
+
+</form>
+
+
+<!-- رسالة النجاح -->
+<div id="success">
+    ✅ تم تسجيلك في ورشة المنح الدراسية بنجاح!
+</div>
+
+
+<!-- رسالة الخطأ -->
+<div id="error">
+    ❌ حدث خطأ أثناء الإرسال. حاول مرة أخرى.
+</div>
+
+
+<div class="footer">
+    Veritasium • Research • Discover • Understand
+</div>
