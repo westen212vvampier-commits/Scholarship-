@@ -1,17 +1,27 @@
-<!-- عنوان الورشة -->
+<!-- الشعار -->
+<div class="logo-box">
+    <img
+        src="veritasium-logo.jpeg"
+        alt="شعار Veritasium"
+        class="logo">
+</div>
+
+
+<!-- مقدمة الورشة -->
 <div class="header">
 
     <h1>ورشة المنح الدراسية</h1>
 
     <p>
-        يرجى ملء المعلومات التالية لإتمام التسجيل
-        في ورشة المنح الدراسية.
+        أهلاً بك في ورشة المنح الدراسية.
+        يرجى تعبئة المعلومات التالية لإتمام التسجيل
+        والحصول على تفاصيل الورشة.
     </p>
 
-    <small>
+    <div class="note">
         <span class="required">*</span>
-        السؤال مطلوب
-    </small>
+        جميع الحقول المطلوبة يجب تعبئتها
+    </div>
 
 </div>
 
@@ -23,6 +33,7 @@
     method="POST">
 
     <!-- إعدادات البريد -->
+
     <input
         type="hidden"
         name="_subject"
@@ -33,8 +44,14 @@
         name="_template"
         value="table">
 
+    <input
+        type="hidden"
+        name="_captcha"
+        value="false">
+
 
     <!-- الاسم -->
+
     <div class="question">
 
         <label>
@@ -47,12 +64,14 @@
             name="full_name"
             placeholder="اكتب اسمك الثلاثي بالعربي"
             maxlength="100"
+            autocomplete="name"
             required>
 
     </div>
 
 
     <!-- العمر -->
+
     <div class="question">
 
         <label>
@@ -72,6 +91,7 @@
 
 
     <!-- التليجرام -->
+
     <div class="question">
 
         <label>
@@ -90,6 +110,7 @@
 
 
     <!-- تأكيد الحضور -->
+
     <div class="question">
 
         <label>
@@ -105,7 +126,7 @@
                     name="attendance"
                     value="نعم"
                     required>
-                نعم
+                نعم، سأحضر
             </label>
 
             <label>
@@ -113,7 +134,7 @@
                     type="radio"
                     name="attendance"
                     value="لا">
-                لا
+                لا، لن أتمكن من الحضور
             </label>
 
             <label>
@@ -130,6 +151,7 @@
 
 
     <!-- زر التسجيل -->
+
     <button
         type="submit"
         id="submitButton">
@@ -141,17 +163,21 @@
 </form>
 
 
-<!-- رسالة النجاح -->
+<!-- نجاح -->
+
 <div id="success">
     ✅ تم تسجيلك في ورشة المنح الدراسية بنجاح!
 </div>
 
 
-<!-- رسالة الخطأ -->
+<!-- خطأ -->
+
 <div id="error">
     ❌ حدث خطأ أثناء الإرسال. حاول مرة أخرى.
 </div>
 
+
+<!-- الفوتر -->
 
 <div class="footer">
     Veritasium • Research • Discover • Understand
